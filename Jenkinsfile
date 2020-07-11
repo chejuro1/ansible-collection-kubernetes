@@ -27,7 +27,7 @@ pipeline {
             steps {
                 
                //sh "ansible-playbook -i inventory.ini  playbook.yml "
-               sh 'ansible-playbook -i ansible-collection-kubernetes/inventory/myinventory/hosts  ansible-collection-kubernetes/playbooks/converge.yml --syntax-check'
+               sh 'ansible-playbook -i inventory/myinventory/hosts  playbooks/converge.yml --syntax-check'
             }
         }
         stage('Deploy') {
