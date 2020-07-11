@@ -1,0 +1,54 @@
+[all]
+ansible ansible_host=172.31.23.29
+ceph11  ansible_host=172.31.25.178
+ceph12  ansible_host=172.31.30.67
+ceph13  ansible_host=172.31.29.147
+kube11  ansible_host=172.31.20.64
+kube12  ansible_host=172.31.20.196
+kube13  ansible_host=172.31.24.229
+kube14  ansible_host=172.31.25.155
+kube15  ansible_host=172.31.19.233
+kube16  ansible_host=172.31.16.32
+
+[ansible]
+ansible
+
+[ceph_mon]
+ceph11
+ceph12
+ceph13
+
+[ceph_mgr]
+ceph11
+ceph12
+ceph13
+
+[ceph_osd]
+ceph11
+ceph12
+ceph13
+
+[ceph_mds]
+ceph11
+ceph12
+ceph13
+
+[ceph_rgw]
+ceph11
+ceph12
+ceph13
+
+[etcd]
+kube11
+kube12
+kube13
+
+[kube_master]
+kube11
+kube12
+kube13
+
+[kube_node]
+kube14
+kube15
+kube16
