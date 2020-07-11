@@ -9,7 +9,7 @@ pipeline {
             steps {
               
              
-                sh 'ansible -i inventory/myinventory/hosts -m ping -u root'
+                sh 'ansible  inventory/myinventory/hosts -m ping -u root'
                 sh "hostname;which ansible"
                 //sh 'ansible-playbook -i inventory.ini playbook.yml --syntax-check'
                 sh 'ansible-playbook -i inventory/myinventory/hosts  playbooks/converge.yml --syntax-check' 
