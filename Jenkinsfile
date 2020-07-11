@@ -12,7 +12,7 @@ pipeline {
                 sh 'ansible all -m ping -u root'
                 sh "hostname;which ansible"
                 //sh 'ansible-playbook -i inventory.ini playbook.yml --syntax-check'
-                sh 'ansible-playbook -i ansible-collection-kubernetes/inventory/myinventory/hosts  ansible-collection-kubernetes/playbooks/converge.yml --syntax-check' 
+                sh 'ansible-playbook -i inventory/myinventory/hosts  playbooks/converge.yml --syntax-check' 
                  
             }
         }
